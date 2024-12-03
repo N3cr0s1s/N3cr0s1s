@@ -9,6 +9,8 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    env:
+      METRICS_TOKEN: ${{secrets.ACCESS_TOKEN}}
     permissions:
       contents: write
     steps:
